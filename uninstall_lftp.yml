@@ -4,8 +4,8 @@
   hosts: all
   become: true
   tasks:
-   - name: Instalar la última versión de lftp
+   - name: Desinstalar la última versión de lftp
      apt:
       name: lftp
-      state: absen
+      state: absent
       update_cache: True
