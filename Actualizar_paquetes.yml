@@ -1,7 +1,7 @@
 ---
 
 - name: Actualizar los paquetes del sistema name de forma segura
-  hosts: servidor
+  hosts: all
   become: true
   tasks:
    - name: Actualizar paquetes
